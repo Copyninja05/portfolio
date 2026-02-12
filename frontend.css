@@ -1,0 +1,440 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.overall{
+    padding:30px 0px;
+    background-color: black;
+    min-height: 100vh;
+    overflow-x:hidden ;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.project{
+    display: flex;
+    position: relative;
+    left:-8%;
+    align-items: center;
+    justify-content:center;
+    width:20%;
+    height:70px;
+    /* background-color: ; */
+    border-top-right-radius:40px;
+    border-bottom-right-radius:40px;
+     font-family: "Kumbh Sans", sans-serif;
+    color: black;
+    background-image: linear-gradient(to right,#e6d8d8 20%,#ffffff 60%,#c5baba);
+}
+
+a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+     font-family: "Kumbh Sans", sans-serif;
+     font-weight: 700;
+}
+
+.h1{
+    text-align: center;
+    color: white;
+    font-family: "Kumbh Sans", sans-serif;
+    margin-top: 20px;
+}
+
+
+
+.container{
+    width:80%;
+    margin: auto;
+    min-height: 100px;
+    /* background-color: red; */
+    /* padding: 30px; */
+    display: flex;
+    gap:10px;
+}
+
+.boxes{
+        width:20%;
+        background-color:white;
+        min-height:10px;
+        object-fit: cover;
+        border-radius: 20px;
+        min-height: 200px;
+        position: relative;
+        /* overflow: hidden; */
+}
+
+p{
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+
+
+.boxes:hover{
+    filter: saturate(100%);
+    width:80%;
+    transition: all 1s ease-in-out;
+}
+
+
+
+.boxes{
+    display: flex;
+    width:17%;
+    padding:30px 0px 0px 0px;
+}
+.l{
+    width:50%;
+    height:100%;
+    /* background-color: yellow; */
+}
+
+.r{
+    width:110%;
+    height:100%;
+    
+    /* background-color: blue; */
+    
+}
+
+.boxes:hover .l{
+                width:65%;
+}
+
+.boxes:hover .r{
+                width:110%;
+                
+}
+
+.len{
+    height: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    width:45%;
+    overflow: hidden;
+}
+
+span{
+    /* width:10%; */
+    /* background-color: red; */
+    border-radius: 50%;
+    padding: 90px;
+    
+}
+
+
+
+img{
+    height:200px;
+    width:200px;
+}
+
+.img{
+    padding-top:20px;
+}
+
+h2{
+    font-size: 200px;
+    position: absolute;
+   left: 46%;
+    top: 64%;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.boxes:hover .hhh{
+        left:30%;
+    top:5%;
+    
+    font-size: 25px;
+
+}
+.hhh{
+       position: absolute;
+       left:5%;
+    top:50%;
+       transition: all 0.8s ease;
+       font-family: "Kumbh Sans", sans-serif;
+       
+}
+
+
+
+
+
+.boxes:hover h2{
+    left:10%;
+    top:50%;
+    transition: all 1s ease;
+    font-size: 200px;
+    
+}
+
+.problem-h1{
+    margin-top: 25%;
+}
+
+.r{
+    /* opacity:0;
+    transition:all 1s ease-in-out;
+    padding: 5px; */opacity:0;
+    
+}
+
+.boxes:hover .r{
+    opacity: 1;
+  
+
+
+}
+
+.p-2{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+}
+
+.aaaaa{
+    animation: a1 1s 2s linear forwards;
+}
+
+@keyframes a1{
+    0%{
+        opacity:0;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+.main{
+    width:100%;
+    /* background-color: red; */
+    min-height: 100px;
+    margin-top: 15%;
+    padding:5px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+
+/* .boxes:hover ~ .box2{
+    height:450px;
+    width:17%;
+    margin-top: 5%;
+} */
+
+.boxes{
+    width:20%;
+    background-color: white;
+    min-height: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+    height:450px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.p-2 div{
+    gap:30px;
+}
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+
+        nav{
+            flex-direction: column;
+        }
+
+        p{
+            font-size: 14px;
+        }
+
+
+
+        .project{
+            background-color: none;
+            color:white;
+            position: static;
+            background-image: linear-gradient(black);
+        }
+
+        .boxes{
+            width:80%;
+            margin:auto;
+            height:300px;
+        }
+
+        .container{
+            flex-wrap: wrap;
+        }
+
+        .boxes:hover{
+            width:100%;
+        }
+
+
+        .hhh{
+        top:85%;
+        }
+
+        a{
+            font-size: 15px;
+        }
+}
+
+
+@media only screen and (min-width:600px) and (max-width:900px){
+    .project{
+        width:30%;
+        left:-5%;
+        font-size: 20px;
+    }
+
+     a{
+            font-size: 20px;
+        }
+
+
+        .project h1{
+            font-size: 25px;
+        }
+}
+
+
+
+@media only screen and (min-width:600px) and (max-width:1200px){
+
+    .boxes{
+        width:47%;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .boxes:hover{
+        width:96%;
+    }
+
+    
+}
+
+
+@media only screen and (min-width:1000px) and (max-width:1200px){
+
+    .boxes{
+        width:32%;
+    }
+
+
+    .boxes:hover{
+        width:65%;
+    }
+
+    
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px){
+
+    .project h1{
+        font-size: 25px;
+    }
+
+    a{
+        font-size: 22px;
+    }
+}
+
+
+@media only screen and (min-width:750px) and (max-width:1200px){
+
+    .r{
+        width:110%;
+    }
+
+    .box{
+        width:32%;
+    }
+
+    .boxes:hover .l{
+        width:65%;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .boxes{
+        height:470px;
+    }
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px){
+
+    .boxes:hover{
+        width:100%;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    h2{
+        display: none;
+    }
+
+    .main p{
+        font-size: 15px;
+    }
+
+    .main{
+        margin-top: 0px;
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .r{
+        width:100%;
+    }
+
+    .hhh{
+        font-size: 20px;
+    }
+
+    .boxes{
+        width:70%;
+    }
+
+
+
+
+
+    .boxes:hover .hhh {
+    left: 30%;
+    top: 5%;
+    font-size: 17px;
+
+}}

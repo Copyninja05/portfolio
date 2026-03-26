@@ -472,6 +472,9 @@ a:hover{
     top:15%;
     min-height:100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
 }
 
 
@@ -488,7 +491,7 @@ a:hover{
 }
 
 .h1-7{
-         font-size: 65px;
+         font-size: 50px;
    font-weight: bold;
    background: linear-gradient(90deg, #000000 65%,#ffffff 35%);
    background-clip: text;

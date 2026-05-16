@@ -41,8 +41,46 @@
 
 
         <div class="icon">
-            <a href="./index.html"><i class="fa-solid fa-arrow-up"></i></a>
+            <a id="mailLink" href="mailto:km479950@gmail.com" target="_self" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
+        <script>
+            (function () {
+                var form = document.querySelector('.form form');
+                var nameInput = form ? form.querySelector('input[placeholder="YOUR NAME"]') : null;
+                var emailInput = form ? form.querySelector('input[placeholder="ENTER EMAIL"]') : null;
+                var messageTextarea = form ? form.querySelector('textarea') : null;
+                var mailLink = document.getElementById('mailLink');
+                if (!form || !nameInput || !emailInput || !messageTextarea || !mailLink) return;
+
+                function buildMailto() {
+                    var yourName = (nameInput.value || '').trim();
+                    var userEmail = (emailInput.value || '').trim();
+                    var userMessage = (messageTextarea.value || '').trim();
+
+                    var subject = 'Contact from portfolio';
+                    var body =
+                        'YOUR NAME: ' + yourName + '\n' +
+                        'ENTER EMAIL: ' + userEmail + '\n\n' +
+                        'Your Message: ' + userMessage;
+
+                    var url = 'mailto:km479950@gmail.com' +
+                        '?subject=' + encodeURIComponent(subject) +
+                        '&body=' + encodeURIComponent(body);
+
+                    return url;
+                }
+
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    mailLink.href = buildMailto();
+                    mailLink.click();
+                });
+
+                mailLink.addEventListener('click', function (e) {
+                    mailLink.href = buildMailto();
+                });
+            })();
+        </script>
     </div>
 
 

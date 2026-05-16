@@ -70,14 +70,10 @@
                     return url;
                 }
 
+                // Send button should open mail with current inputs.
                 form.addEventListener('submit', function (e) {
                     e.preventDefault();
-                    mailLink.href = buildMailto();
-                    mailLink.click();
-                });
-
-                mailLink.addEventListener('click', function (e) {
-                    mailLink.href = buildMailto();
+                    window.location.href = buildMailto();
                 });
             })();
         </script>

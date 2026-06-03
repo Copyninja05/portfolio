@@ -49,8 +49,8 @@
                 var nameInput = form ? form.querySelector('input[placeholder="YOUR NAME"]') : null;
                 var emailInput = form ? form.querySelector('input[placeholder="ENTER EMAIL"]') : null;
                 var messageTextarea = form ? form.querySelector('textarea') : null;
-                var mailLink = document.getElementById('mailLink');
-                if (!form || !nameInput || !emailInput || !messageTextarea || !mailLink) return;
+                if (!form || !nameInput || !emailInput || !messageTextarea) return;
+
 
                 function buildMailto() {
                     var yourName = (nameInput.value || '').trim();
